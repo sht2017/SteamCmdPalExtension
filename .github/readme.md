@@ -8,6 +8,22 @@
 
 English | [简体中文](readmes/zh_CN.md) | [正體中文](readmes/zh_TW.md)
 
+<div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 8px; background-color:rgb(253, 253, 253);">
+  <strong>ⓘ Info</strong>
+  <br>
+  Steam will be terminated once this extension is started - that means you had better not start or reload Command Palette when games are running.
+</div>
+<div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 8px; background-color: #f3e6b2;">
+  <strong>ⓘ Note</strong>
+  <br>
+  The SteamPal for Command Palette using Chrome DevTools Protocol over TCP to interact with Steam CEF and fetch necessary data. Please note that this extension may conflict with other programs that use the same technique. If there is a conflict, you may consider manually setting the debugging port. In addition, since Steam service has a high privilege level on Windows, using CEF debugging over TCP locally may be risky to your account from hacking if you cannot guarantee that your system is trustworthy (I've tried to implement debugging over pipe, but it seems like the steamwebhelper just won't take it. This might implement in further).
+</div>
+<div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 8px; background-color: #cb514e; color: white;">
+  <strong>ⓘ Important</strong>
+  <br>
+  Due to a bug from upstream (<a style="color: lightblue;" href="https://github.com/microsoft/PowerToys/issues/39837">microsoft/PowerToys#39837</a>), you may observe that there is a memory leak when using this extension. I cannot do anything about it at this point.
+</div><br>
+
 SteamPal is a Powertoys Command Palette extension that allows you to quickly search, launch, and manage your Steam games and applications directly from the Command Palette. This extension leverages the Steam Client's debugging interface to retrieve real-time information about your installed games, playtimes, and even launch them with a single command.
 
 ![Preview](assets/preview.png)

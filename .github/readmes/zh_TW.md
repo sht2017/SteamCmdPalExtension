@@ -8,6 +8,22 @@
 
 [English](../readme.md) | [简体中文](zh_CN.md) | 正體中文
 
+<div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 8px; background-color:rgb(253, 253, 253);">
+  <strong>ⓘ 資訊</strong>
+  <br>
+  啟動此擴充功能後，Steam 服務將會立即終止——這意味著當遊戲正在執行時，強烈建議不要啟用或重新載入命令面板（Command Palette）。
+</div>
+<div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 8px; background-color: #f3e6b2;">
+  <strong>ⓘ 備註</strong>
+  <br>
+  SteamPal for Command Palette 透過 TCP 協定使用 Chrome DevTools Protocol 與 Steam CEF 互動並獲取必要資料。請注意，本擴充功能可能與其他採用相同技術的程式發生衝突。若發生衝突，您可以考慮手動設定偵錯連接埠。此外，由於 Steam 服務在 Windows 系統具有高權限層級，若您無法確保系統環境安全無虞，在本機透過 TCP 進行 CEF 偵錯可能使您的帳戶面臨遭到入侵的風險（我們曾嘗試實作管道通訊偵錯，但 steamwebhelper 似乎無法支援，此功能或將於未來實現）。
+</div>
+<div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; border-radius: 8px; background-color: #cb514e; color: white;">
+  <strong>ⓘ 重要事項</strong>
+  <br>
+  因上游程式錯誤（<a style="color: lightblue;" href="https://github.com/microsoft/PowerToys/issues/39837">microsoft/PowerToys#39837</a>），您可能會觀察到使用此擴充功能時出現記憶體洩漏現象。對此問題，我們目前無能為力。
+</div><br>
+
 SteamPal 是一款 Powertoys 命令面板擴充功能，讓您能直接透過命令面板快速搜尋、啟動及管理 Steam 遊戲與應用程式。本擴充功能運用 Steam 用戶端的偵錯介面，即時取得已安裝遊戲資訊、遊玩時數，並可透過單一指令啟動遊戲。
 
 ![Preview](../assets/preview.png)
