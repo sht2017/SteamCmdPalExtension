@@ -4,7 +4,12 @@
 
 <div align="left">
 
-# SteamPal [![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/download/dotnet/9.0) [![License](https://img.shields.io/github/license/sht2017/SteamCmdPalExtension)](https://github.com/sht2017/SteamCmdPalExtension/blob/main/LICENSE)
+# SteamPal for Command Palette <br> [![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/download/dotnet/9.0) [![License](https://img.shields.io/github/license/sht2017/SteamCmdPalExtension)](../LICENSE) <br> [![Microsoft Store](https://get.microsoft.com/images/en-us%20dark.svg)](https://apps.microsoft.com/detail/9ns40lt8g6v9?referrer=appbadge&mode=direct)
+
+
+
+
+
 
 English | [简体中文](readmes/zh_CN.md) | [正體中文](readmes/zh_TW.md)
 
