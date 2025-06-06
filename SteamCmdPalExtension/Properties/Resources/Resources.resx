@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="appType_game" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="appType_application" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="appType_depotonly" xml:space="preserve">
+    <value>Depot Only</value>
+  </data>
+  <data name="appType_shortcut" xml:space="preserve">
+    <value>Shortcut</value>
+  </data>
+  <data name="appType_legacyMedia" xml:space="preserve">
+    <value>Media (Legacy)</value>
+  </data>
+  <data name="appType_series" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="appType_music" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="appType_plugin" xml:space="preserve">
+    <value>Plugin</value>
+  </data>
+  <data name="appType_video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="appType_franchise" xml:space="preserve">
+    <value>Franchise</value>
+  </data>
+  <data name="appType_hardware" xml:space="preserve">
+    <value>Hardware</value>
+  </data>
+  <data name="appType_config" xml:space="preserve">
+    <value>Config</value>
+  </data>
+  <data name="appType_tool" xml:space="preserve">
+    <value>Tool</value>
+  </data>
+  <data name="appType_driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="appType_guide" xml:space="preserve">
+    <value>Guide</value>
+  </data>
+  <data name="appType_dlc" xml:space="preserve">
+    <value>DLC</value>
+  </data>
+  <data name="appType_deprecatedMedia" xml:space="preserve">
+    <value>Media (Deprecated)</value>
+  </data>
+  <data name="appType_demo" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="displayName" xml:space="preserve">
+    <value>SteamPal</value>
+  </data>
+  <data name="hours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="initializedSubtitle" xml:space="preserve">
+    <value>Rapidly find games in your Steam library</value>
+  </data>
+  <data name="initializeFailedSubtitle" xml:space="preserve">
+    <value>Failed to initialize Steam client, check log for more details</value>
+  </data>
+  <data name="initializingSubtitle" xml:space="preserve">
+    <value>Initializing...</value>
+  </data>
+  <data name="lastPlayed" xml:space="preserve">
+    <value>Last Played</value>
+  </data>
+  <data name="playTime" xml:space="preserve">
+    <value>Play Time</value>
+  </data>
+  <data name="playTimeLast2Weeks" xml:space="preserve">
+    <value>Last Two Weeks Play Time</value>
+  </data>
+  <data name="queryPlaceholder" xml:space="preserve">
+    <value>Search by Name</value>
+    <comment>(from steam)</comment>
+  </data>
+  <data name="unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="appType_beta" xml:space="preserve">
+    <value>Beta</value>
+  </data>
+  <data name="appType_comic" xml:space="preserve">
+    <value>Comic</value>
+  </data>
+  <data name="today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="setting_debuggerMode_choice_tcp" xml:space="preserve">
+    <value>TCP</value>
+  </data>
+  <data name="setting_debuggerMode_choice_pipe" xml:space="preserve">
+    <value>Pipe (Not planned) (Placeholder)</value>
+  </data>
+  <data name="setting_debuggerMode_description" xml:space="preserve">
+    <value>Choose Steam CEF debugger working mode (not implemented)</value>
+  </data>
+  <data name="setting_debuggerPort_description" xml:space="preserve">
+    <value>Set debugging port for Steam CEF, default to dynamic</value>
+  </data>
+  <data name="setting_maxResult_description" xml:space="preserve">
+    <value>The maximum number of results to display in results (suggest below 50)</value>
+  </data>
+  <data name="setting_debuggerMode_label" xml:space="preserve">
+    <value>Debugger Mode</value>
+  </data>
+  <data name="setting_debuggerPort_label" xml:space="preserve">
+    <value>(Optional) Debugger Port</value>
+  </data>
+  <data name="setting_maxResult_label" xml:space="preserve">
+    <value>Max Results</value>
+  </data>
+  <data name="displayStatus_invalid" xml:space="preserve">
+    <value>Invalid</value>
+  </data>
+  <data name="displayStatus_launching" xml:space="preserve">
+    <value>Launching</value>
+  </data>
+  <data name="displayStatus_uninstalling" xml:space="preserve">
+    <value>Uninstalling</value>
+  </data>
+  <data name="displayStatus_installing" xml:space="preserve">
+    <value>Installing</value>
+  </data>
+  <data name="displayStatus_running" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="displayStatus_validating" xml:space="preserve">
+    <value>Validating</value>
+  </data>
+  <data name="displayStatus_updating" xml:space="preserve">
+    <value>Updating</value>
+  </data>
+  <data name="displayStatus_downloading" xml:space="preserve">
+    <value>Downloading</value>
+  </data>
+  <data name="displayStatus_synchronizing" xml:space="preserve">
+    <value>Synchronizing</value>
+  </data>
+  <data name="displayStatus_readyToInstall" xml:space="preserve">
+    <value>Ready to Install</value>
+  </data>
+  <data name="displayStatus_readyToPreload" xml:space="preserve">
+    <value>Ready to Preload</value>
+  </data>
+  <data name="displayStatus_readyToLaunch" xml:space="preserve">
+    <value>Ready to Launch</value>
+  </data>
+  <data name="displayStatus_regionRestricted" xml:space="preserve">
+    <value>Region Restricted</value>
+  </data>
+  <data name="displayStatus_presaleOnly" xml:space="preserve">
+    <value>Presale Only</value>
+  </data>
+  <data name="displayStatus_invalidPlatform" xml:space="preserve">
+    <value>Invalid Platform</value>
+  </data>
+  <data name="displayStatus_parentalBlocked" xml:space="preserve">
+    <value>(Deprecated) Parental Blocked</value>
+  </data>
+  <data name="displayStatus_preloadOnly" xml:space="preserve">
+    <value>Preload Only</value>
+  </data>
+  <data name="displayStatus_borrowerLocked" xml:space="preserve">
+    <value>Borrower Locked</value>
+  </data>
+  <data name="displayStatus_updatePaused" xml:space="preserve">
+    <value>Update Paused</value>
+  </data>
+  <data name="displayStatus_updateQueued" xml:space="preserve">
+    <value>Update Queued</value>
+  </data>
+  <data name="displayStatus_updateRequired" xml:space="preserve">
+    <value>Update Required</value>
+  </data>
+  <data name="displayStatus_updateDisabled" xml:space="preserve">
+    <value>Update Disabled</value>
+  </data>
+  <data name="displayStatus_downloadPaused" xml:space="preserve">
+    <value>Download Paused</value>
+  </data>
+  <data name="displayStatus_downloadQueued" xml:space="preserve">
+    <value>Download Queued</value>
+  </data>
+  <data name="displayStatus_downloadRequired" xml:space="preserve">
+    <value>Download Required</value>
+  </data>
+  <data name="displayStatus_downloadDisabled" xml:space="preserve">
+    <value>Download Disabled</value>
+  </data>
+  <data name="displayStatus_licensePending" xml:space="preserve">
+    <value>License Pending</value>
+  </data>
+  <data name="displayStatus_licenseExpired" xml:space="preserve">
+    <value>LicenseExpired</value>
+  </data>
+  <data name="displayStatus_availForFree" xml:space="preserve">
+    <value>Available for Free</value>
+  </data>
+  <data name="displayStatus_availToBorrow" xml:space="preserve">
+    <value>Available to Borrow</value>
+  </data>
+  <data name="displayStatus_availGuestPass" xml:space="preserve">
+    <value>Available Guest Pass</value>
+  </data>
+  <data name="displayStatus_purchase" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+  <data name="displayStatus_unavailable" xml:space="preserve">
+    <value>Unavailable</value>
+  </data>
+  <data name="displayStatus_notLaunchable" xml:space="preserve">
+    <value>Not Launchable</value>
+  </data>
+  <data name="displayStatus_cloudError" xml:space="preserve">
+    <value>CloudError</value>
+  </data>
+  <data name="displayStatus_cloudOutOfDate" xml:space="preserve">
+    <value>CloudOutOfDate</value>
+  </data>
+  <data name="displayStatus_terminating" xml:space="preserve">
+    <value>Terminating</value>
+  </data>
+  <data name="displayStatus_preloadComplete" xml:space="preserve">
+    <value>Preload Complete</value>
+  </data>
+  <data name="searchInStoreTitle" xml:space="preserve">
+    <value>Search in Steam</value>
+  </data>
+  <data name="searchInStoreSubtitle" xml:space="preserve">
+    <value>Open Steam client and search {0} in store</value>
+  </data>
+  <data name="properties" xml:space="preserve">
+    <value>Properties...</value>
+  </data>
+  <data name="play" xml:space="preserve">
+    <value>Play</value>
+  </data>
+</root>

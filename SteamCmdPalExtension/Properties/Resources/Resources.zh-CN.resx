@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tags" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="appType_game" xml:space="preserve">
+    <value>游戏</value>
+  </data>
+  <data name="appType_application" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="appType_depotonly" xml:space="preserve">
+    <value>占位符</value>
+  </data>
+  <data name="appType_shortcut" xml:space="preserve">
+    <value>快捷方式</value>
+  </data>
+  <data name="appType_legacyMedia" xml:space="preserve">
+    <value>媒体（旧版）</value>
+  </data>
+  <data name="appType_series" xml:space="preserve">
+    <value>剧集</value>
+  </data>
+  <data name="appType_music" xml:space="preserve">
+    <value>音乐</value>
+  </data>
+  <data name="appType_plugin" xml:space="preserve">
+    <value>插件</value>
+  </data>
+  <data name="appType_video" xml:space="preserve">
+    <value>视频</value>
+  </data>
+  <data name="appType_franchise" xml:space="preserve">
+    <value>应用中心（翻译可能不准确）</value>
+  </data>
+  <data name="appType_hardware" xml:space="preserve">
+    <value>硬件</value>
+  </data>
+  <data name="appType_config" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="appType_tool" xml:space="preserve">
+    <value>工具</value>
+  </data>
+  <data name="appType_driver" xml:space="preserve">
+    <value>驱动</value>
+  </data>
+  <data name="appType_guide" xml:space="preserve">
+    <value>指南</value>
+  </data>
+  <data name="appType_dlc" xml:space="preserve">
+    <value>DLC</value>
+  </data>
+  <data name="appType_deprecatedMedia" xml:space="preserve">
+    <value>媒体（已弃用）</value>
+  </data>
+  <data name="appType_demo" xml:space="preserve">
+    <value>免费试用版</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="hours" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="initializedSubtitle" xml:space="preserve">
+    <value>快速查找Steam库中的游戏</value>
+  </data>
+  <data name="initializeFailedSubtitle" xml:space="preserve">
+    <value>无法初始化 Steam 客户端，请查看日志以获取更多详细信息</value>
+  </data>
+  <data name="initializingSubtitle" xml:space="preserve">
+    <value>初始化中...</value>
+  </data>
+  <data name="lastPlayed" xml:space="preserve">
+    <value>最后运行日期</value>
+  </data>
+  <data name="playTime" xml:space="preserve">
+    <value>游戏时间</value>
+  </data>
+  <data name="playTimeLast2Weeks" xml:space="preserve">
+    <value>游戏时间（过去两周）</value>
+  </data>
+  <data name="queryPlaceholder" xml:space="preserve">
+    <value>按名称搜索</value>
+  </data>
+  <data name="unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="appType_beta" xml:space="preserve">
+    <value>测试版</value>
+  </data>
+  <data name="appType_comic" xml:space="preserve">
+    <value>漫画</value>
+  </data>
+  <data name="today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="setting_debuggerMode_choice_tcp" xml:space="preserve">
+    <value>TCP 协议</value>
+  </data>
+  <data name="setting_debuggerMode_choice_pipe" xml:space="preserve">
+    <value>管道（未计划）（占位符）</value>
+  </data>
+  <data name="setting_debuggerMode_description" xml:space="preserve">
+    <value>选择Steam CEF调试器的工作模式（未实现）</value>
+  </data>
+  <data name="setting_debuggerPort_description" xml:space="preserve">
+    <value>设置Steam CEF的调试端口，默认为动态</value>
+  </data>
+  <data name="setting_maxResult_description" xml:space="preserve">
+    <value>显示搜索结果的最大数量（建议低于50）</value>
+  </data>
+  <data name="setting_debuggerMode_label" xml:space="preserve">
+    <value>调试器模式</value>
+  </data>
+  <data name="setting_debuggerPort_label" xml:space="preserve">
+    <value>（可选）调试器端口</value>
+  </data>
+  <data name="setting_maxResult_label" xml:space="preserve">
+    <value>最大结果数</value>
+  </data>
+  <data name="searchInStoreTitle" xml:space="preserve">
+    <value>在Steam商店中搜索</value>
+  </data>
+  <data name="searchInStoreSubtitle" xml:space="preserve">
+    <value>打开Steam客户端并在商店中搜索 {0}</value>
+  </data>
+  <data name="properties" xml:space="preserve">
+    <value>属性...</value>
+  </data>
+  <data name="play" xml:space="preserve">
+    <value>开始游戏</value>
+  </data>
+</root>

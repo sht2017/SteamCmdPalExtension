@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "SteamCmdPalExtension (Package)": {
+      "commandName": "MsixPackage",
+      "doNotLaunchApp": true
+    },
+    "SteamCmdPalExtension (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
