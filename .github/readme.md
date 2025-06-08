@@ -21,6 +21,8 @@ SteamPal is a Powertoys Command Palette extension that allows you to quickly sea
 
 ![Preview](assets/preview.png)
 
+###### Wallpaper was from [Linfi-MUU](https://www.pixiv.net/artworks/96964495)
+
 ## Table of Contents
 
 - [Features](#features)

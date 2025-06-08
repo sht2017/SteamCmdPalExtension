@@ -21,6 +21,8 @@ SteamPal 是一款 Powertoys 命令面板扩展，让你能直接在命令面板
 
 ![Preview](../assets/preview.png)
 
+###### 壁纸来自于 [Linfi-MUU](https://www.pixiv.net/artworks/96964495)
+
 ## 目录
 
 - [功能特性](#功能特性)

@@ -21,6 +21,8 @@ SteamPal 是一款 Powertoys 命令面板擴充功能，讓您能直接透過命
 
 ![Preview](../assets/preview.png)
 
+###### 桌布來自 [Linfi-MUU](https://www.pixiv.net/artworks/96964495)
+
 ## 目錄
 
 - [功能特色](#功能特色)
