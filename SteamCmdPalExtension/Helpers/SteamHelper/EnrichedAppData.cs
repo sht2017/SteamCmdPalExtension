@@ -2,7 +2,7 @@
 
 internal sealed class EnrichedAppData
 {
-    internal required int AppId { get; set; }
+    internal required long AppId { get; set; }
     internal required string DisplayName { get; set; }
     internal required int DisplayStatus { get; set; }
     internal required int Type { get; set; }

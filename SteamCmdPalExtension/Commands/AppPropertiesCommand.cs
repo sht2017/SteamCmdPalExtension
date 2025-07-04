@@ -7,9 +7,9 @@ namespace SteamCmdPalExtension.Commands;
 
 internal sealed partial class AppPropertiesCommand : InvokableCommand
 {
-    private readonly int _appid;
+    private readonly long _appid;
 
-    internal AppPropertiesCommand(int appid)
+    internal AppPropertiesCommand(long appid)
     {
         _appid = appid;
         Name = Resources.properties;

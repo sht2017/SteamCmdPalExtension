@@ -11,7 +11,7 @@ namespace SteamCmdPalExtension.Helpers.SteamHelper.Client;
 
 [JsonSourceGenerationOptions(UnmappedMemberHandling = JsonUnmappedMemberHandling.Skip)]
 [JsonSerializable(typeof(Dictionary<int, string>))]
-[JsonSerializable(typeof(Dictionary<int, AppData>))]
+[JsonSerializable(typeof(Dictionary<long, AppData>))]
 internal sealed partial class ClientContext : JsonSerializerContext { }
 
 internal partial class Client
@@ -26,7 +26,7 @@ internal partial class Client
             string.Empty, ClientContext.Default.DictionaryInt32String) ??
             throw new InvalidOperationException("Failed to fetch TagsMapping");
     }
-    private async Task<Dictionary<int, AppData>> GetAppDataAsync()
+    private async Task<Dictionary<long, AppData>> GetAppDataAsync()
     {
         (RemoteObject remoteObject, _) = await _debugger.EvaluateAsync(
             _sessionId,
@@ -55,7 +55,7 @@ internal partial class Client
             }))").ConfigureAwait(false);
         return JsonSerializer.Deserialize(
             remoteObject.Value.ToString() ??
-            string.Empty, ClientContext.Default.DictionaryInt32AppData) ??
+            string.Empty, ClientContext.Default.DictionaryInt64AppData) ??
             throw new InvalidOperationException("Failed to fetch AppData");
     }
     private async Task<bool> GetAppStoreStatusAsync()
@@ -82,7 +82,7 @@ internal partial class Client
             throw new InvalidOperationException("Failed to fetch MinimumLastTimePlayedOrInstalled");
     }
 
-    internal static string GetIconPath(int appid, string? iconHash)
+    internal static string GetIconPath(long appid, string? iconHash)
     {
         string path = Path.Combine(
             STEAM_PATH, "appcache/librarycache",
@@ -93,7 +93,7 @@ internal partial class Client
         }
         return "Assets/AppIconPlaceholder.png";
     }
-    internal static string GetImagePath(int appid, string? filename)
+    internal static string GetImagePath(long appid, string? filename)
     {
         filename ??= "header.jpg";
 

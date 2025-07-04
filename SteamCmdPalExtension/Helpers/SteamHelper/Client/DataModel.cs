@@ -10,10 +10,10 @@ namespace SteamCmdPalExtension.Helpers.SteamHelper.Client;
 internal partial class Client
 {
     private FrozenDictionary<int, string>? _tagsMapping;
-    private readonly ConcurrentDictionary<int, EnrichedAppData> _appData = new();
-    private readonly ConcurrentDictionary<int, int> _appDataHash = new();
-    private readonly ConcurrentDictionary<int, double> _appWeights = new();
-    private readonly ConcurrentDictionary<string, int> _titleAppidMapping = new();
+    private readonly ConcurrentDictionary<long, EnrichedAppData> _appData = new();
+    private readonly ConcurrentDictionary<long, int> _appDataHash = new();
+    private readonly ConcurrentDictionary<long, double> _appWeights = new();
+    private readonly ConcurrentDictionary<string, long> _titleAppidMapping = new();
     private async Task InitializeDataModel()
     {
         _tagsMapping = (await GetTagsMappingAsync().ConfigureAwait(false)).ToFrozenDictionary();
@@ -72,7 +72,7 @@ internal partial class Client
     {
         long minimumLastTimePlayedOrInstalled = await GetMinimumLastTimePlayedOrInstalledAsync()
             .ConfigureAwait(false);
-        foreach ((int appid, AppData appData) in await GetAppDataAsync().ConfigureAwait(false))
+        foreach ((long appid, AppData appData) in await GetAppDataAsync().ConfigureAwait(false))
         {
             if (!_appData.TryGetValue(appid, out _) ||
                 _appDataHash[appid] != appData.GetHashCode())

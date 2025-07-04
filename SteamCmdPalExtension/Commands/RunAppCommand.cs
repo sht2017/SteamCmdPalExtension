@@ -8,8 +8,8 @@ namespace SteamCmdPalExtension.Commands;
 
 internal sealed partial class RunAppCommand : InvokableCommand
 {
-    private readonly int _appid;
-    internal RunAppCommand(int appid)
+    private readonly long _appid;
+    internal RunAppCommand(long appid)
     {
         _appid = appid;
         Name = Resources.play;

@@ -9,7 +9,7 @@ internal sealed class AppData
     public required int AppType { get; set; }
 
     [JsonPropertyName("appid")]
-    public required int AppId { get; set; }
+    public required long AppId { get; set; }
 
     [JsonPropertyName("display_name")]
     public required string DisplayName { get; set; }

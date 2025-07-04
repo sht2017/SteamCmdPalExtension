@@ -43,9 +43,9 @@ public partial class CommandsProvider : CommandProvider, IDisposable
     {
         try
         {
-            ExtensionHost.LogMessage("[SteamCmdPalExtensionCommandsProvider.cs] Start initializing Steam client");
+            ExtensionHost.LogMessage("[SteamCmdPalExtension.CommandsProvider] Start initializing Steam client");
             _client = await Client.CreateWsAsync(_settings.DebuggerPort).ConfigureAwait(false);
-            ExtensionHost.LogMessage("[SteamCmdPalExtensionCommandsProvider.cs] Steam client has been successfully initialized");
+            ExtensionHost.LogMessage("[SteamCmdPalExtension.CommandsProvider] Steam client has been successfully initialized");
 
             _commands = [
                 new CommandItem(new ResultPage(_settings, _client)) {
@@ -59,7 +59,7 @@ public partial class CommandsProvider : CommandProvider, IDisposable
         catch (Exception exception)
         {
             ExtensionHost.LogMessage(
-                $"[SteamCmdPalExtensionCommandsProvider.cs] Failed to initialize Steam client, caused by {exception.Message}");
+                $"[SteamCmdPalExtension.CommandsProvider] Failed to initialize Steam client, caused by {exception.Message}");
             _commands = [
                 new CommandItem(){
                     Title = DisplayName,
