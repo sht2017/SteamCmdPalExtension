@@ -90,7 +90,7 @@ internal sealed partial class Client : IDisposable
         port ??= AvailablePort;
         //ExtensionHost.LogMessage($"Starting Steam at {port}");
         return await CreateAsync(
-            $"-cef-enable-debugging -devtools-port {port}",
+            $"-cef-enable-debugging -devtools-port {port} -silent",
             () => Debugger.CreateWsAsync(new Uri($"http://127.0.0.1:{port}")),
             interval).ConfigureAwait(false);
     }
