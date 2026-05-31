@@ -370,4 +370,16 @@
   <data name="play" xml:space="preserve">
     <value>Play</value>
   </data>
+  <data name="setting_silentMode_choice_true" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="setting_silentMode_choice_false" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="setting_silentMode_description" xml:space="preserve">
+    <value>Start Steam minimized to tray.</value>
+  </data>
+  <data name="setting_silentMode_label" xml:space="preserve">
+    <value>Launch with -silent flag</value>
+  </data>
 </root>

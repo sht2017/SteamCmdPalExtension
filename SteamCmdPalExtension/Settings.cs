@@ -1,5 +1,6 @@
 ﻿using Microsoft.CommandPalette.Extensions.Toolkit;
 using SteamCmdPalExtension.Properties.Resources;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -21,6 +22,12 @@ public class Settings : JsonSettingsManager
         Resources.setting_maxResult_label,
         "30");
 
+    private readonly ToggleSetting _silentMode = new(
+        Namespaced(nameof(SilentMode)),
+        Resources.setting_silentMode_description,
+        Resources.setting_silentMode_label,
+        false);
+
     private readonly ChoiceSetSetting _debuggerMode = new(
         Namespaced(nameof(DebuggerMode)),
         Resources.setting_debuggerMode_description,
@@ -40,6 +47,7 @@ public class Settings : JsonSettingsManager
                     result :
                     30 :
                 30;
+    public bool SilentMode => _silentMode.Value;
     public string DebuggerMode => _debuggerMode.Value ?? "tcp";
     public int? DebuggerPort => _debuggerPort.Value == null ?
             null :
@@ -60,6 +68,7 @@ public class Settings : JsonSettingsManager
     {
         FilePath = SettingsJsonPath();
         Settings.Add(_maxResult);
+        Settings.Add(_silentMode);
         Settings.Add(_debuggerMode);
         Settings.Add(_debuggerPort);
         LoadSettings();
