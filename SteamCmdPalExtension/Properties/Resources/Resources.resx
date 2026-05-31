@@ -286,7 +286,7 @@
   <data name="displayStatus_presaleOnly" xml:space="preserve">
     <value>Presale Only</value>
   </data>
-  <data name="displayStatus_invalidPlatform" xml:space="preserve">
+  <data name="zx" xml:space="preserve">
     <value>Invalid Platform</value>
   </data>
   <data name="displayStatus_parentalBlocked" xml:space="preserve">
@@ -369,5 +369,14 @@
   </data>
   <data name="play" xml:space="preserve">
     <value>Play</value>
+  </data>
+  <data name="setting_silentMode_choice_true" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="setting_silentMode_choice_false" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="setting_silentMode_description" xml:space="preserve">
+    <value>Start Steam minimized to tray.</value>
   </data>
 </root>

@@ -44,7 +44,7 @@ public partial class CommandsProvider : CommandProvider, IDisposable
         try
         {
             ExtensionHost.LogMessage("[SteamCmdPalExtension.CommandsProvider] Start initializing Steam client");
-            _client = await Client.CreateWsAsync(_settings.DebuggerPort).ConfigureAwait(false);
+            _client = await Client.CreateWsAsync(_settings.DebuggerPort, silentFlag: _settings.SilentMode).ConfigureAwait(false);
             ExtensionHost.LogMessage("[SteamCmdPalExtension.CommandsProvider] Steam client has been successfully initialized");
 
             _commands = [

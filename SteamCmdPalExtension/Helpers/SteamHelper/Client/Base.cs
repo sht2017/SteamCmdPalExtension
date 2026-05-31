@@ -85,12 +85,13 @@ internal sealed partial class Client : IDisposable
         }
     }
 
-    internal static async Task<Client> CreateWsAsync(int? port = null, int interval = 1000)
+    internal static async Task<Client> CreateWsAsync(int? port = null, int interval = 1000, bool silentFlag = false)
     {
         port ??= AvailablePort;
+        string silent = silentFlag ? "-silent " : "";
         //ExtensionHost.LogMessage($"Starting Steam at {port}");
         return await CreateAsync(
-            $"-cef-enable-debugging -devtools-port {port}",
+            $"{silent}-cef-enable-debugging -devtools-port {port}",
             () => Debugger.CreateWsAsync(new Uri($"http://127.0.0.1:{port}")),
             interval).ConfigureAwait(false);
     }
