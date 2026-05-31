@@ -377,9 +377,6 @@
     <value>False</value>
   </data>
   <data name="setting_silentMode_description" xml:space="preserve">
-    <value>Start Steam minimized to tray.</value>
-  </data>
-  <data name="setting_silentMode_label" xml:space="preserve">
-    <value>Launch with -silent flag</value>
+    <value>Startup Steam minimized to tray.</value>
   </data>
 </root>
