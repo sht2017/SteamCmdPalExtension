@@ -9,6 +9,10 @@ namespace SteamCmdPalExtension.Helpers.SteamHelper.Client;
 
 internal partial class Client
 {
+    private const int MaxLoggedUpdateFailuresPerInterval = 3;
+    private static readonly TimeSpan UpdateFailureLogInterval = TimeSpan.FromMinutes(5);
+    private static readonly TimeSpan MaxUpdateRetryDelay = TimeSpan.FromSeconds(30);
+
     private FrozenDictionary<int, string>? _tagsMapping;
     private readonly ConcurrentDictionary<long, EnrichedAppData> _appData = new();
     private readonly ConcurrentDictionary<long, int> _appDataHash = new();
@@ -26,20 +30,51 @@ internal partial class Client
     }
     private async Task UpdateTask()
     {
+        ThrottledFailureLogger failureLogger = new(
+            "[SteamCmdPalExtension] Data model update",
+            UpdateFailureLogInterval,
+            MaxLoggedUpdateFailuresPerInterval,
+            ExtensionHost.LogMessage);
+        int consecutiveFailures = 0;
         await Task.Delay(_interval, _cts.Token).ConfigureAwait(false);
         while (!_cts.IsCancellationRequested)
         {
+            TimeSpan delay;
             try
             {
                 await UpdateAsync().ConfigureAwait(false);
-                await Task.Delay(_interval, _cts.Token).ConfigureAwait(false);
+                consecutiveFailures = 0;
+                failureLogger.ReportSuccess();
+                delay = TimeSpan.FromMilliseconds(_interval);
             }
-            catch (OperationCanceledException) { }
+            catch (OperationCanceledException)
+            {
+                // Receive timeouts are retried immediately; shutdown ends the loop
+                continue;
+            }
             catch (Exception ex)
             {
-                ExtensionHost.LogMessage("[SteamCmdPalExtension] Error during data model update: " + ex.Message);
+                consecutiveFailures++;
+                failureLogger.ReportFailure(ex);
+                delay = GetUpdateRetryDelay(consecutiveFailures);
+            }
+
+            try
+            {
+                await Task.Delay(delay, _cts.Token).ConfigureAwait(false);
+            }
+            catch (OperationCanceledException)
+            {
+                break;
             }
         }
+    }
+
+    private TimeSpan GetUpdateRetryDelay(int consecutiveFailures)
+    {
+        // Exponential backoff (1x, 2x, 4x, ... the update interval) so persistent failures don't spin
+        double delayMilliseconds = _interval * Math.Pow(2, Math.Min(consecutiveFailures - 1, 16));
+        return TimeSpan.FromMilliseconds(Math.Min(delayMilliseconds, MaxUpdateRetryDelay.TotalMilliseconds));
     }
 
     private EnrichedAppData CreateEnrichedAppData(AppData appData)
