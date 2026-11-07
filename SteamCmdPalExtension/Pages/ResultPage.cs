@@ -65,7 +65,9 @@ namespace SteamCmdPalExtension.Pages
 
             foreach (EnrichedAppData app in filteredGames.Take(_settings.MaxResult))
             {
+#if DEBUG
                 ExtensionHost.LogMessage($"Appid: '{app.AppId}', HeaderFilename: '{app.HeaderFilename}'");
+#endif
                 List<IDetailsElement> metadata = [
                         new DetailsElement
                         {
